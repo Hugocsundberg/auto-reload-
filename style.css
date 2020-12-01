@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.f5 {
+    height: 300px;
+    width: 300px;
+    background: url(https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F5.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.hand {
+    height: 300px;
+    width: 300px;
+    background: url(/finger_PNG6301.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: press 1s forwards linear;
+}
+
+@keyframes press {
+    from {transform: translate(0, -150px);}
+    to {transform: translate(0, 150px);}
+}
