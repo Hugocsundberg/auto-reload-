@@ -5,12 +5,13 @@ body {
     flex-direction: column;
 }
 
-.f5 {
+.refresh {
     height: 300px;
     width: 300px;
-    background: url(https://www.wpclipart.com/computer/keyboard_keys/function_key_row/computer_key_F5.png);
+    background: url(/reload.png);
     background-size: contain;
     background-position: center;
+    animation: spin 1s .8s forwards;
 }
 
 .hand {
@@ -21,9 +22,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     animation: press 1s forwards linear;
+    position: relative;
+    z-index: 1;
 }
 
 @keyframes press {
     from {transform: translate(0, -150px);}
     to {transform: translate(0, 150px);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
